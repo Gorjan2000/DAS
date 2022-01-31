@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="margin-top: 10%;">
+    @{
+        int counter = 1;
+
+        foreach (var item in Model)
+        {
+            <h5>Нарачка број: @counter - @item.orderStatus</h5>
+            if (item.orderStatus == 0)
+            {
+                <ul>
+
+                    <li>@Html.ActionLink("Доставено", "ChangeStatusToDelivered", "OrderHistory",routeValues: new { id = item.ID },htmlAttributes: null)</li>
+                    <li>@Html.ActionLink("Откажи", "ChangeStatusToCanceled", "OrderHistory",routeValues: new { id = item.ID },htmlAttributes : null)</li>
+                </ul>
+            }
+
+            foreach (var i in item.FoodOrdered)
+            {
+                <h4>@i.Name</h4>
+            }
+            counter++;
+
+
+        }
+    }
+</div>
+

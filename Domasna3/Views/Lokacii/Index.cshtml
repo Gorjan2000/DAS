@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "City";
+}
+
+<h2>ChooseLocal</h2>
+
+@using (Html.BeginForm("ChooseLocal", "Lokacii", FormMethod.Post))
+{
+    <select name="cityName">
+        @foreach (var city in Model)
+        {
+            <option value="@city">@city</option>
+        }
+    </select>
+
+    <button type="submit">Селектирај</button>
+
+}
+
+
+

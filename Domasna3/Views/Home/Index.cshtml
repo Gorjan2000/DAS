@@ -1,0 +1,369 @@
+﻿<style>
+
+    header {
+        height: 120px;
+    }
+
+        header h1 {
+            float: left;
+            margin-top: 32px;
+        }
+
+            header h1 .color {
+                color: #02b8dd;
+            }
+
+        header nav {
+            float: right;
+        }
+
+            header nav ul li {
+                float: left;
+                display: inline-block;
+                margin-top: 50px;
+            }
+
+                header nav ul li a {
+                    color: #444;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    display: block;
+                    margin-right: 20px;
+                }
+
+    body {
+        background-color: #fff;
+        color: #777;
+        font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    }
+
+    p {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-family: 'Crete Round', serif;
+        font-weight: bold;
+        color: #444;
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-weight: 300;
+        color: #f30b0b;
+        font-size: 55px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 30px;
+        color: #444;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 24px;
+        color: #444;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    h5 {
+        font-size: 15px;
+        color: #444;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    a {
+        text-decoration: none;
+        color: #444;
+    }
+
+        a:hover {
+            color: #02b8dd;
+        }
+
+    strong {
+        font-weight: bold;
+    }
+
+    small {
+        font-size: 13px;
+        color: #777;
+        font-style: italic;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        padding: 0 10px;
+        width: 940px;
+    }
+
+    #hero-image {
+        height: 580px;
+        padding-top: 1px;
+        background: #e8eced url('../../NewFolder1/slider.jpg') no-repeat center;
+    }
+
+        #hero-image h2 {
+            margin: 180px 0 40px 0;
+        }
+
+    .button-1 {
+        display: block;
+        text-align: center;
+        background: #444;
+        border-radius: 3px;
+        color: #fff;
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+        margin: 0 auto;
+    }
+
+        .button-1:hover {
+            background-color: #02b8dd;
+            color: #fff;
+        }
+
+    #features ul {
+        margin: 80px 0;
+        margin-left: -50px;
+    }
+
+        #features ul li {
+            width: 300px;
+            padding-top: 140px;
+            float: left;
+            margin-right: 10px;
+            text-align: center;
+            display: inline-block;
+        }
+
+            #features ul li.feature-1 {
+                background: url('../../NewFolder1/korpa.png') no-repeat top center;
+                margin-left: -20px;
+            }
+
+            #features ul li.feature-2 {
+                background: url('../../NewFolder1/easy.png') no-repeat top center;
+            }
+
+            #features ul li.feature-3 {
+                float: right;
+                background: url('../../NewFolder1/dostapnost.jpg') no-repeat top center;
+            }
+
+    #primary-content {
+        background-color: #f8fafa;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+        #primary-content h3 {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 400px;
+            border-bottom: 1px solid #02b8dd;
+            padding: 0 0 20px 0;
+        }
+
+        #primary-content a img {
+            margin: 20px 0;
+        }
+
+    #secondary-content {
+        padding: 60px 0;
+        text-align: center;
+        margin-left: 25px;
+    }
+
+        #secondary-content article {
+            width: 550px;
+            height: 309px;
+            float: left;
+            background-color: #f5f5f5;
+        }
+
+            #secondary-content article:first-child {
+                margin-right: 20px;
+                display: inline-block;
+            }
+
+            #secondary-content article .overlay {
+                background: rgba(255, 255, 255, .95);
+                height: 230px;
+                width: 190px;
+                padding: 20px;
+            }
+
+    article h4 {
+        border-bottom: 1px solid #02b8dd;
+        padding-bottom: 20px;
+    }
+
+    .more-link {
+        border: 1px solid #02b8dd;
+        color: #02b8dd;
+        padding: 6px 20px;
+        border-radius: 3px;
+    }
+
+        .more-link:hover {
+            background-color: #02b8dd;
+            color: #fff;
+        }
+
+    #cta {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+        #cta h3 {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 400px;
+            border-bottom: 1px solid #02b8dd;
+            padding: 0 0 20px 0;
+        }
+
+    .button-2 {
+        display: block;
+        margin: 0 auto;
+        border: 2px solid #02b8dd;
+        color: #02b8dd;
+        border-radius: 3px;
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+        .button-2:hover {
+            background-color: #02b8dd;
+            color: #fff;
+        }
+
+    footer {
+        padding: 60px 0;
+        background-color: #f8fafa;
+    }
+
+    #footer-info {
+        width: 380px;
+        float: left;
+        margin-top: 10px;
+    }
+
+    #footer-links {
+        width: 520px;
+        float: right;
+    }
+
+        #footer-links ul {
+            width: 150px;
+            float: left;
+            margin-left: 20px;
+        }
+
+            #footer-links ul li {
+                margin: 10px 0;
+            }
+</style>
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>O&E</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="hero-image">
+        <div class="wrapper">
+            <h2>
+                <strong>Order and Eat</strong><br />
+                вашиот сервис за нарачка на храна
+            </h2>
+            <a href="" class="button-1">Get Started</a>
+        </div>
+    </div>
+    <div id="features">
+        <div class="wrapper">
+            <ul>
+                <li class="feature-1">
+                    <h4>БЕСПЛАТНА ДОСТАВА</h4>
+                    <p style="font-size:22px;"> За нарачки над 899 денари</p>
+                </li>
+                <li class="feature-2">
+                    <h4>НАЈГОЛЕМА ПОНУДА</h4>
+                    <p style="font-size:22px;">Сè на едно место!</p>
+                </li>
+                <li class="feature-3">
+                    <h4>24/7 ПОДДРШКА</h4>
+                    <p style="font-size:22px;">Тука сме за Вас</p>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    <div id="primary-content">
+        <div class="wrapper">
+            <article>
+                <h3>БРЗО И ЕДНОСТАВНО</h3>
+                <p style="font-size:26px; text-align:center;">Брзо и едноставно, без притоа да имате потреба да ја напуштите удобноста на вашиот дом направете нарачка на вашиот омилен оброк. Пронајди го твојот омилен локал од твојот град, избери еден од производите кои ги нуди, а за останатото ние ке се погрижиме.</p>
+
+            </article>
+        </div>
+    </div>
+    <div id="secondary-content">
+        <div class="wrapper">
+            <article style="background-image: url('../../NewFolder1/orderFood.jpg');">
+            </article>
+        </div>
+    </div>
+    <div style="margin-top:-60px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d47440.95780473226!2d21.4179806!3d41.9989908!3m2!1i1024!2i768!4f13.1!2m1!1srestaurants%20in%20skopje!5e0!3m2!1sen!2smk!4v1640616524352!5m2!1sen!2smk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <br><br>
+        </div>
+        <footer>
+            <div class="wrapper">
+                <div id="footer-info">
+                    <p>Copyright 2021 O&E. All rights reserved.</p>
+                    <p><a href="#">Terms of Service</a> I <a href="#">Privacy</a></p>
+                </div>
+                <div id="footer-links">
+                    <p style="font-size:22px;"><b>Контактирајте нѐ</b></p>
+
+                    <p style="font-size:20px;">Јавете ни сѐ</p>
+
+                    <p style="font-size:24px; color:red;">12345</p>
+                    <p style="font-size:20px;">info@orderandeat.mk</p>
+                    <p style="font-size:20px;">ул.183 бр 12 Скопје</p>
+
+
+                </div>
+                <div class="clear"></div>
+            </div>
+        </footer>
+</body>
+</html>

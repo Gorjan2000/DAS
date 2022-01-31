@@ -1,0 +1,27 @@
+﻿@model List<Domasna3.Models.FoodModel>
+<h2>Мени</h2>
+
+@using (Html.BeginForm("Order","Lokacii", FormMethod.Post))
+{
+    for (var i = 0; i < Model.Count(); i++)
+    {
+        <table>
+            <tr>
+                <td>
+                    @Html.HiddenFor(it => it[i].Id)
+                    @Html.DisplayFor(it => it[i].Name)
+                </td>
+                <td>
+                    @Html.CheckBoxFor(it => it[i].Checked, new { Style = "vertical-align:3px}" })
+                </td>
+            </tr>
+        </table>
+
+    }
+
+    <input id="Submit1" type="submit" value="Нарачај" />
+
+
+
+}
+

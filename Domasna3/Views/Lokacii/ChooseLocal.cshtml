@@ -1,0 +1,17 @@
+﻿
+<h2>Одбери продавница</h2>
+
+
+@using (Html.BeginForm("ChooseFood", "Lokacii", FormMethod.Post))
+{
+    <select name="localName">
+        @foreach (var item in Model)
+        {
+
+            <option value="@item">@item</option>
+        }
+    </select>
+
+    <button type="submit">Селектирај</button>
+
+}
